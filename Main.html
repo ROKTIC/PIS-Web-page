@@ -11,6 +11,7 @@
     <!-- Loading the FabricJS library -->
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.2/fabric.min.js"> </script> 
     <script src="./js/clock.js"></script>
+    <script src="./js/canvas.js"></script>
 
 	<!--css-->
     <link rel="stylesheet" href="./css/style.css" media="all"/>
@@ -51,50 +52,59 @@
 
                 </div>
             </div> <!-- clock div end -->
-            
-            <div>
-                <p style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #828181;">
-                        <img src="images/site_amount.png"> 
-                </p>
-            </div>
-            <div>
-                <p style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #666464;">
-                        <img src="images/current_entering.png"> 
-                </p>
-            </div>
-            <div>
-                <p style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #6EB92B;">
+
+        <ul style="padding-left: 0px; list-style: none;">
+            <p>
+                <li class="leftbar" style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #828181;">
+                            <img src="images/site_amount.png">
+                            <h2 id="">000</h2>
+                </li>
+            </p>
+            <p>
+            <li class="leftbar" style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #666464;">
+                        <img src="images/current_entering.png">
+                        <h2 id="">000</h2> 
+            </li>
+            </p>    
+            <li class="leftbar" style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #6EB92B;">
                         <img src="images/parking_available.png"> 
-                </p>
-            </div>
-
-            <div>
-                <p style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; margin-top: 70px; background-color: #4C4C4C;">
+                        <h2 id="">000</h2>
+    
+            </li>
+            <li class="leftbar" style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; margin-top: 70px; background-color: #4C4C4C;">
                         <img src="images/green_zone.png"> 
-                </p>
-            </div>
-            <div>
-                <p style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #4C4C4C;">
-                        <img src="images/disabled_zone.png"> 
-                </p>
-            </div>
-            <div>
-                <p style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #4C4C4C;">
+                        <h2 id="">000</h2>
+            </li>
+            <p>
+
+
+            <li class="leftbar" style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #4C4C4C;">
+                        <img src="images/disabled_zone.png">
+                        <h2 id="">000</h2> 
+            </li>
+            </p>
+            <li class="leftbar" style="height: 45px; text-align: left;margin-left: 45px; margin-right: 45px; background-color: #4C4C4C;">
                         <img src="images/normal_zone.png"> 
-                </p>
-            </div>
-
-            <div>
-                <p style="height: 45px; text-align: center;margin-left: 45px; margin-right: 45px; margin-top: 70px; background-color: #4C4C4C;">
+                        <h2 id="">000</h2>
+            </li>
+            <li class="leftbar" style="height: 45px; text-align: center;margin-left: 45px; margin-right: 45px; margin-top: 70px; background-color: #4C4C4C;">
                         <img src="images/logo.png"> 
-                </p>
-            </div>
+                        <h2 id="">000</h2>
+            </li>
+       
 
-           
+            </ul>
         </div> <!-- Left div end -->
+     
 
         <div class="right">
+        
+            <canvas id="canvas" width="1200" height="900" style="border:0px solid #000000">
+                이 브라우저는 캔버스를 지원하지 않습니다.</canvas> 
+            
+                <img style="display: none;" src="images/mark.png" id="car-image" height="20"> 
 
+                
         </div> <!-- Right div end -->
 
     </div> <!-- wrapper div end -->
